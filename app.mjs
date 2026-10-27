@@ -1,5 +1,5 @@
 import {events,dateKey,isUnlocked,nextSurprise,openingTime} from './calendar.mjs';
-const previewMode=new URLSearchParams(location.search).get('previa')==='1';
+const previewMode=location.pathname.endsWith('/previa.html')||new URLSearchParams(location.search).get('previa')==='1';
 const canOpen=(date,now=new Date())=>previewMode||isUnlocked(date,now);
 const $=s=>document.querySelector(s);const timeline=$('#timeline');const dialog=$('#surprise-dialog');let lastKey='';let toastTimer;
 function toast(text){$('#toast').textContent=text;$('#toast').classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').classList.remove('visible'),4000);}
