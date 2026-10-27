@@ -1,0 +1,9 @@
+{
+  "dateTests": "PASS",
+  "syntax": "PASS",
+  "photos": 13,
+  "timezone": "America/Sao_Paulo",
+  "events": 5,
+  "browserQA": "Unavailable: browser runtime initialization failed",
+  "publication": "Blocked pending explicit permission to upload personal photos to Sites"
+}
