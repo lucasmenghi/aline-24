@@ -1,4 +1,4 @@
-import {events,dateKey,isUnlocked,nextSurprise,openingTime} from './calendar.mjs?v=surpresa3-2230';
+import {events,dateKey,isUnlocked,nextSurprise,openingTime} from './calendar.mjs?v=surpresa5-2145';
 const previewMode=location.pathname.endsWith('/previa.html')||new URLSearchParams(location.search).get('previa')==='1';
 const canOpen=(event,now=new Date())=>previewMode||isUnlocked(event,now);
 const releaseDay=event=>{const [year,month,day]=(event.releaseDate??event.date).split('-');return day+'/'+month;};
